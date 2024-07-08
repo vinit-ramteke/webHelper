@@ -103,7 +103,7 @@ namespace webHelper
             rtChsarp.Text = code;
             code = "";
 
-            code += "-------------------php_save-------------" + "\n";
+            code += "//-------------------php_save-------------" + "\n";
             code += "if($cmd===\""+txtTableName.Text+ "_Save\")" + "\n";
             code += "{" + "\n";
             for (int i = 0; i < dgv.Rows.Count; i++)
@@ -135,10 +135,10 @@ namespace webHelper
             code += "\t\t\techo \"$msgJson\";" + "\n";
             code += "\t\t}" + "\n";
             code += "}" + "\n";
-            code += "-------------------php_save-------------" + "\n";
+            code += "//-------------------php_save-------------" + "\n";
 
 
-            code += "-------------------php_update-------------" + "\n";
+            code += "//-------------------php_update-------------" + "\n";
             code += "if($cmd===\"" + txtTableName.Text + "_Update\")" + "\n";
             code += "{" + "\n";
             for (int i = 0; i < dgv.Rows.Count; i++)
@@ -171,9 +171,9 @@ namespace webHelper
             code += "\t\t\techo \"$msgJson\";" + "\n";
             code += "\t\t}" + "\n";
             code += "}" + "\n";
-            code += "-------------------php_update-------------" + "\n";
+            code += "//-------------------php_update-------------" + "\n";
 
-            code += "-------------------php_delete-------------" + "\n";
+            code += "//-------------------php_delete-------------" + "\n";
             code += "if($cmd===\"" + txtTableName.Text + "_Delete\")" + "\n";
             code += "{" + "\n";
             
@@ -199,12 +199,12 @@ namespace webHelper
             code += "\t\t\techo \"$msgJson\";" + "\n";
             code += "\t\t}" + "\n";
             code += "}" + "\n";
-            code += "-------------------php_delete-------------" + "\n";
+            code += "//-------------------php_delete-------------" + "\n";
 
 
 
 
-            code += "-------------------php_getAllData-------------" + "\n";
+            code += "//-------------------php_getAllData-------------" + "\n";
             code += "if($cmd===\"" + txtTableName.Text + "_getAllData\")" + "\n";
             code += "{" + "\n";
 
@@ -242,7 +242,7 @@ namespace webHelper
 
 
             code += "}" + "\n";
-            code += "-------------------php_getAllData-------------" + "\n";
+            code += "//-------------------php_getAllData-------------" + "\n";
 
 
             rtPhp.Text = code;
