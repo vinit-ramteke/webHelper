@@ -218,7 +218,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 47);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Key";
+            this.label2.Text = "Key ";
             // 
             // label1
             // 
